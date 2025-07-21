@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int n,x;
+	    cin >> n >> x;
+	    int bestrating=0;
+	    int i;
+	    for(i=0;i<n;i++){
+	        int s,r;
+	        cin >> s >> r;
+	        if(s<=x && r>bestrating){
+	            bestrating=r;
+	        }
+	    }
+	    cout << bestrating << endl;
+	}
+
+}
